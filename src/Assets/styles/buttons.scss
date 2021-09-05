@@ -1,0 +1,32 @@
+.btn {
+  border: none;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 14px 28px 13px;
+  color: white;
+  background-color: #403432;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  transition: background 0.4s;
+  position: relative;
+
+  &:hover {
+    background: #776763;
+    cursor: pointer;
+  }
+
+  &:disabled {
+    background: #C1B4B1;
+  }
+}
+
+.btn-cart {
+  background-color: #5B3A32;
+  padding: 14px 9px 13px !important;
+  box-sizing: border-box;
+
+  img {
+    margin-right: 7.2px;
+  }
+}

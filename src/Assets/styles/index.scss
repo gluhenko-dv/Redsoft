@@ -1,1 +1,38 @@
 @import "./normolize.scss";
+@import "./buttons.scss";
+
+@font-face {
+  font-family: "Merriweather";
+  src: url('./../fonts/Merriweather-Bold.ttf') format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url('./../fonts/Merriweather-Regular.ttf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url('./../fonts/Merriweather-Light.ttf') format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+
+
+
+body {
+  overflow: hidden;
+  width: 100%;
+  background: #E5E5E5;
+  font-family: Merriweather;
+}
+
+.container {
+  max-width: 1920px;
+  padding: 0 18.3vw;
+  overflow: hidden;
+  box-sizing: border-box;
+}

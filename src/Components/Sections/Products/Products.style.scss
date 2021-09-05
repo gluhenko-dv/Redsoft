@@ -1,0 +1,17 @@
+.products {
+  box-sizing: border-box;
+  padding-top: 43px;
+
+  h2 {
+    line-height: 150%;
+    margin: 0;
+  }
+}
+
+.products-catalog {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 37px;
+  flex-wrap: wrap;
+}
+

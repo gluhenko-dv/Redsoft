@@ -2,6 +2,7 @@
 
   "title": "Картины эпохи Возрождения",
   "data": [{
+      "id": 1,
       "title": "«Рождение Венеры» Сандро Боттичелли",
       "price": "1 000 000 $",
       "oldPrice": "2 000 000 $",
@@ -9,24 +10,24 @@
       "status": true
     },
     {
+      "id": 2,
       "title": "«Тайная вечеря»  Леонардо да Винчи",
       "price": "3 000 000 $",
-      "oldPrice": null,
-      "image": "/images/catalog/1.jpg",
+      "image": "/images/catalog/2.jpg",
       "status": true
     },
     {
+      "id": 3,
       "title": "«Сотворение Адама» Микеланджело",
       "price": "5 000 000 $",
       "oldPrice": "6 000 000 $",
-      "image": "/images/catalog/1.jpg",
+      "image": "/images/catalog/3.jpg",
       "status": true
     },
     {
-      "title": "«Рождение Венеры» Сандро Боттичелли",
-      "price": null,
-      "oldPrice": null,
-      "image": "/images/catalog/1.jpg",
+      "id": 4,
+      "title": "«Урок анатомии»  Рембрандт",
+      "image": "/images/catalog/4.jpg",
       "status": false
     }
   ]

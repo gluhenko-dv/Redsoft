@@ -1,14 +1,16 @@
 import { useState, useEffect } from 'react';
 import { Layout } from '../Components/Common';
+import Products from '../Components/Sections/Products/Products';
 
 interface ICatalog {
-    title: string;
-    data: {
+    title?: string;
+    data?: {
+        id: number;
         title: string;
-        price: string | null;
-        oldPrice: string | null;
-        image: string | null;
-        status: true;
+        price: string;
+        oldPrice: string;
+        image: string;
+        status: boolean;
     }[];
 }
 
@@ -16,7 +18,7 @@ const Index: React.FC = () => {
     const [catalog, setCatalog] = useState<ICatalog>();
 
     useEffect(() => {
-        const response = () => fetch(`http://localhost:3000/data/catalog.json`);
+        const response = () => fetch(`./data/catalog.json`);
         response()
             .then((response) => response.json())
             .then((data) => setCatalog(data))
@@ -25,7 +27,7 @@ const Index: React.FC = () => {
 
     return (
         <Layout>
-            <h2>index</h2>
+            <Products {...catalog} />
         </Layout>
     );
 };

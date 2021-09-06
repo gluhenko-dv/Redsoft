@@ -1,18 +1,20 @@
 import React, { useEffect, useState } from 'react';
+import { ICatalogData } from '../../../../interfaces';
 import { getResponse } from '../../../Lib/api';
 
 import './Card.style.scss';
 
-const Card: React.FC<any> = ({ id, title, price, oldPrice, image, status }) => {
+const Card: React.FC<ICatalogData> = ({ id, title, price, oldPrice, image, status }) => {
     const [loading, setLoading] = useState(false);
-    const [inCart, setInCart] = useState(localStorage.getItem(id));
+    const [inCart, setInCart] = useState(localStorage.getItem(`${id}`));
 
     const clickHandler = () => {
         setLoading(true);
         setTimeout(() => {
             const response = getResponse();
+            console.log(response);
             const status = `${inCart === 'true' ? 'false' : 'true'}`;
-            localStorage.setItem(id, status);
+            localStorage.setItem(`${id}`, status);
             setInCart(status);
             setLoading(false);
         }, 1500);

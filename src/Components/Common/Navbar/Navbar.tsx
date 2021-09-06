@@ -2,8 +2,7 @@ import React from 'react';
 
 import './Navbar.style.scss';
 
-const Navbar: React.FC = (props) => {
-    const { children } = props;
+const Navbar: React.FC = () => {
     return (
         <nav className="nav">
             <ul>

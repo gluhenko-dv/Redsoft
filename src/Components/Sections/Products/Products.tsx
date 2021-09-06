@@ -1,21 +1,10 @@
 import React from 'react';
+import { ICatalog } from '../../../../interfaces';
 import { Card } from '../../Blocks';
 
 import './Products.style.scss';
 
-interface ProductsProps {
-    title?: string;
-    data?: {
-        id: number;
-        title: string;
-        price: string | null;
-        oldPrice: string | null;
-        image: string;
-        status: boolean;
-    }[];
-}
-
-const Products: React.FC<ProductsProps> = ({ title, data }) => {
+const Products: React.FC<ICatalog> = ({ title, data }) => {
     return (
         <section className="products container">
             {title && <h2>{title}</h2>}

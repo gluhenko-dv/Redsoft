@@ -1,18 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Layout } from '../Components/Common';
 import Products from '../Components/Sections/Products/Products';
-
-interface ICatalog {
-    title?: string;
-    data?: {
-        id: number;
-        title: string;
-        price: string;
-        oldPrice: string;
-        image: string;
-        status: boolean;
-    }[];
-}
+import { ICatalog } from '../../interfaces/index';
 
 const Index: React.FC = () => {
     const [catalog, setCatalog] = useState<ICatalog>();
